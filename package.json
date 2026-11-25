@@ -1,0 +1,15 @@
+{
+  "name": "paraiso-rio-360",
+  "version": "1.0.0",
+  "description": "Plano 360° y CRM de Paraíso del Río",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes http-server . -p 8083 -c-1",
+    "sync-tour": "python tools/sync_tour.py",
+    "build": "esbuild crm/app.jsx --outfile=crm/app.js --target=es2020",
+    "zip": "python tools/build_zip.py"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

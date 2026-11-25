@@ -1,0 +1,212 @@
+{
+ "LM1-V": {
+  "id": "mzm-01",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_q6xr00ep.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_q6xr00ep_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_q6xr00ep_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_q6xr00ep_vendido.webp"
+ },
+ "LM2-V": {
+  "id": "mzm-02",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_sfz6djat.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_sfz6djat_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_sfz6djat_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_sfz6djat_vendido.webp"
+ },
+ "LM3-V": {
+  "id": "mzm-03",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dqsi4ppk.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dqsi4ppk_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dqsi4ppk_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dqsi4ppk_vendido.webp"
+ },
+ "LM4-V": {
+  "id": "mzm-04",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_woyiaij0.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_woyiaij0_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_woyiaij0_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_woyiaij0_vendido.webp"
+ },
+ "LM5-V": {
+  "id": "mzm-05",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8qgca8z2.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8qgca8z2_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8qgca8z2_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8qgca8z2_vendido.webp"
+ },
+ "LM6-V": {
+  "id": "mzm-06",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_o7hb0lfv.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_o7hb0lfv_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_o7hb0lfv_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_o7hb0lfv_vendido.webp"
+ },
+ "LM7-V": {
+  "id": "mzm-07",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_xd8yhi7d.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_xd8yhi7d_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_xd8yhi7d_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_xd8yhi7d_vendido.webp"
+ },
+ "LM8-V": {
+  "id": "mzm-08",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_rkgu72ov.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_rkgu72ov_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_rkgu72ov_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_rkgu72ov_vendido.webp"
+ },
+ "LM9-V": {
+  "id": "mzm-09",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_h4cjtnuk.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_h4cjtnuk_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_h4cjtnuk_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_h4cjtnuk_vendido.webp"
+ },
+ "LM10-V": {
+  "id": "mzm-10",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_oj8bnz31.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_oj8bnz31_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_oj8bnz31_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_oj8bnz31_vendido.webp"
+ },
+ "LM11-V": {
+  "id": "mzm-11",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_lvm3b5gt.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_lvm3b5gt_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_lvm3b5gt_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_lvm3b5gt_vendido.webp"
+ },
+ "LM12-V": {
+  "id": "mzm-12",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_4ivy8bct.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_4ivy8bct_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_4ivy8bct_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_4ivy8bct_vendido.webp"
+ },
+ "LM13-V": {
+  "id": "mzm-13",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7qlmfuc9.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7qlmfuc9_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7qlmfuc9_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7qlmfuc9_vendido.webp"
+ },
+ "LM14-V": {
+  "id": "mzm-14",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7u5bzm42.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7u5bzm42_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7u5bzm42_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7u5bzm42_vendido.webp"
+ },
+ "LM15-V": {
+  "id": "mzm-15",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dcazkbe7.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dcazkbe7_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dcazkbe7_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_dcazkbe7_vendido.webp"
+ },
+ "LM16-V": {
+  "id": "mzm-16",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8rqrbgg5.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8rqrbgg5_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8rqrbgg5_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_8rqrbgg5_vendido.webp"
+ },
+ "LM17-V": {
+  "id": "mzm-17",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bzy6xitf.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bzy6xitf_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bzy6xitf_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bzy6xitf_vendido.webp"
+ },
+ "LM18-V": {
+  "id": "mzm-18",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ae5thijq.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ae5thijq_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ae5thijq_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ae5thijq_vendido.webp"
+ },
+ "LM19-V": {
+  "id": "mzm-19",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_kcq9o5nu.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_kcq9o5nu_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_kcq9o5nu_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_kcq9o5nu_vendido.webp"
+ },
+ "LM20-V": {
+  "id": "mzm-20",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7foufsij.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7foufsij_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7foufsij_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_7foufsij_vendido.webp"
+ },
+ "LM21-V": {
+  "id": "mzm-21",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bbyn4zrp.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bbyn4zrp_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bbyn4zrp_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_bbyn4zrp_vendido.webp"
+ },
+ "LM22-V": {
+  "id": "mzm-22",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_u3q3dkiu.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_u3q3dkiu_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_u3q3dkiu_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_u3q3dkiu_vendido.webp"
+ },
+ "LM23-V": {
+  "id": "mzm-23",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_m5yxx5ki.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_m5yxx5ki_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_m5yxx5ki_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_m5yxx5ki_vendido.webp"
+ },
+ "LM24-V": {
+  "id": "mzm-24",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_geejilur.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_geejilur_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_geejilur_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_geejilur_vendido.webp"
+ },
+ "LM25-V": {
+  "id": "mzm-25",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_x4i9mux1.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_x4i9mux1_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_x4i9mux1_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_x4i9mux1_vendido.webp"
+ },
+ "LM26-V": {
+  "id": "mzm-26",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_0jp4jeu8.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_0jp4jeu8_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_0jp4jeu8_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_0jp4jeu8_vendido.webp"
+ },
+ "LM27-V": {
+  "id": "mzm-27",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_49bzsw6b.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_49bzsw6b_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_49bzsw6b_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_49bzsw6b_vendido.webp"
+ },
+ "LM28-V": {
+  "id": "mzm-28",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_fsthr1zc.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_fsthr1zc_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_fsthr1zc_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_fsthr1zc_vendido.webp"
+ },
+ "LM29-V": {
+  "id": "mzm-29",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_s1d3mxwe.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_s1d3mxwe_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_s1d3mxwe_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_s1d3mxwe_vendido.webp"
+ },
+ "LM30-V": {
+  "id": "mzm-30",
+  "base": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ibp7u358.webp",
+  "disponible": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ibp7u358_disponible.webp",
+  "reservado": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ibp7u358_reservado.webp",
+  "vendido": "media/panorama_07FDE4D1_0992_1197_4179_DDCFAB9E6B6B_HS_ibp7u358_vendido.webp"
+ }
+}

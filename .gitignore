@@ -1,0 +1,21 @@
+# Artefactos de build y dependencias
+dist/
+node_modules/
+*.zip
+
+# Vercel / herramientas locales
+.vercel/
+.claude/
+.codegraph/
+.firebase/
+
+# Logs y basura de sistema
+*.log
+firestore-debug.log
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+.vercel
+.env*
