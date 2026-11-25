@@ -43,7 +43,7 @@
         'res_1E535873_0BB2_709B_419A_7A81BDF93B5C': 'j',
         'res_1E534873_0BB2_709B_4186_20C5A4803C4D': 'k',
         'res_1E53F872_0BB2_7095_41A3_3D00A0B3DE78': 'l',
-        'res_1CAEF924_13F2_086E_41AE_5F37EA36B785': 'm'
+        'res_1AF0709F_143D_5300_41B3_89A9DB547EC9': 'm'
     };
     var SIGN_LABEL_RE = /^MZ([A-Z])$/i;
     // La Mz M ademas agrupa su poligono ("MZ M") y los numeros de lote ("MZ M - Numeros") en la capa mz-m.
