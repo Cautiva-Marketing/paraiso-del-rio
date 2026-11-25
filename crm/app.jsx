@@ -1840,6 +1840,18 @@
                                     </button>
                                 </div>
                             )}
+                            {/* Leyenda Horizontal Inferior */}
+                            <div className="absolute bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 px-3 sm:px-6 py-1.5 sm:py-3 rounded-full border border-gray-200 dark:border-gray-800 shadow-lg z-20 flex items-center gap-2 sm:gap-6 pointer-events-none w-max max-w-[95%]">
+                                <div className="flex flex-row gap-2.5 sm:gap-5 text-[9px] sm:text-xs font-bold text-gray-700 dark:text-gray-300 flex-wrap justify-center overflow-hidden">
+                                    {Object.values(activeStatuses).map(st => (
+                                        <div key={st.id} className="flex items-center gap-1 sm:gap-1.5 min-w-0">
+                                            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full shadow-inner shrink-0" style={{ backgroundColor: st.color }}></div>
+                                            <span className="truncate">{st.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
                             <div className="absolute inset-0 w-full h-full bg-gray-100 dark:bg-gray-950">
                                 {USE_REAL_3DVISTA ? (
                                     <iframe ref={iframeRef} src={TOUR_URL} onLoad={handleIframeLoad} className="w-full h-full border-0 absolute inset-0 z-10 bg-transparent opacity-100" title="Visor 3DVista" allow="fullscreen"></iframe>
