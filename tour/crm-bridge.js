@@ -27,10 +27,29 @@
 
     var STATUS_SUFFIXES = ['_disponible', '_reservado', '_vendido', '_adjudicado'];
     var IGNORED_TAGS = ['begin', 'tourLoaded'];
-    // Cada letrero de manzana ("MZA", "MZM") se oculta junto con la capa de su manzana (mz-a, mz-m).
-    // La Mz M ademas agrupa su poligono ("MZ M") y los numeros de lote ("MZ M - Numeros") en la capa mz-m.
+    // Cada letrero de manzana (la chapita naranja con la letra) se oculta junto con la capa de su manzana (mz-a ... mz-m).
+    // Las etiquetas de los letreros en el export de 3DVista estan duplicadas (varios dicen "MZD" o "MZE"), asi que la manzana
+    // se deduce de la IMAGEN del letrero (res_XXXX = letra que se ve). Si el letrero no esta en la tabla, se usa su etiqueta.
+    var SIGN_IMAGE_BLOCK = {
+        'res_1F182E24_0B9E_70BD_417E_81165A77AC1D': 'a',
+        'res_1E6926FA_0B92_3195_4181_F8DCC585E274': 'b',
+        'res_1E69C6FA_0B92_3195_41A1_4042E8894176': 'c',
+        'res_1E533873_0BB2_709B_41A1_DA72DEBDB491': 'd',
+        'res_1E537873_0BB2_709B_4196_F911D29D7965': 'e',
+        'res_1E532873_0BB2_709B_4120_792FC39E5790': 'f',
+        'res_1E530873_0BB2_709B_419A_4DA02884EC0D': 'g',
+        'res_1E539872_0BB2_7095_41A3_2352B6DFFCFF': 'h',
+        'res_1E6916FA_0B92_3195_419A_C21F969F31DC': 'i',
+        'res_1E535873_0BB2_709B_419A_7A81BDF93B5C': 'j',
+        'res_1E534873_0BB2_709B_4186_20C5A4803C4D': 'k',
+        'res_1E53F872_0BB2_7095_41A3_3D00A0B3DE78': 'l',
+        'res_1CAEF924_13F2_086E_41AE_5F37EA36B785': 'm'
+    };
     var SIGN_LABEL_RE = /^MZ([A-Z])$/i;
+    // La Mz M ademas agrupa su poligono ("MZ M") y los numeros de lote ("MZ M - Numeros") en la capa mz-m.
     var MZ_M_LABELS = { 'MZ M': 1, 'MZ M - Numeros': 1 };
+    // La capa de letreros se muestra en el CRM como "Letreros" (en 3DVista el tag es "LetrerosM").
+    var TAG_RENAMES = { 'LetrerosM': 'letreros' };
     var HOVER_OPACITY = 0.5;
     var TAG_MODE_OPACITY = 0.75;
     var TAG_MODE_HOVER_OPACITY = 0.25;
@@ -158,6 +177,21 @@
     }
 
     // ---------- descubrimiento de overlays ----------
+    // Capa de manzana (mz-a ...) a la que pertenece un overlay que no es lote (letrero, poligono de la Mz M), o ''.
+    function blockTagFor(overlay, label) {
+        var items = safeGet(overlay, 'items');
+        var levels = safeGet(safeGet(items && items[0], 'image'), 'levels');
+        var url = safeGet(levels && levels[0], 'url');
+        if (typeof url === 'string') {
+            for (var res in SIGN_IMAGE_BLOCK) {
+                if (SIGN_IMAGE_BLOCK.hasOwnProperty(res) && url.indexOf(res) >= 0) return 'mz-' + SIGN_IMAGE_BLOCK[res];
+            }
+        }
+        var m = SIGN_LABEL_RE.exec(label);
+        if (m) return 'mz-' + m[1].toLowerCase();
+        return MZ_M_LABELS[label] ? 'mz-m' : '';
+    }
+
     function collect() {
         var overlays;
         try { overlays = tour.player.getByClassName('HotspotPanoramaOverlay') || []; } catch (e) { return 0; }
@@ -167,10 +201,11 @@
         overlays.forEach(function (overlay) {
             var data = safeGet(overlay, 'data') || {};
             var label = data.label;
-            var tags = (data.tags || []).filter(function (t) { return IGNORED_TAGS.indexOf(t) === -1; });
+            var tags = (data.tags || [])
+                .filter(function (t) { return IGNORED_TAGS.indexOf(t) === -1; })
+                .map(function (t) { return TAG_RENAMES[t] || t; });
             if (typeof label === 'string' && !isLotLabel(label)) {
-                var signMatch = SIGN_LABEL_RE.exec(label);
-                var blockTag = signMatch ? 'mz-' + signMatch[1].toLowerCase() : (MZ_M_LABELS[label] ? 'mz-m' : '');
+                var blockTag = blockTagFor(overlay, label);
                 if (blockTag && tags.indexOf(blockTag) === -1) tags = tags.concat([blockTag]);
             }
 
