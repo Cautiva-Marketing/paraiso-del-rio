@@ -8,7 +8,7 @@ o **rojo** `#ef4444` (vendido), y lo controlan los asesores desde el CRM. Clon d
 - Moneda: `$` (editable en Configuración del CRM).
 
 ```
-index.html, manifest.json, img/   shell del CRM (PWA). img/ sale de tour/thumbnail.png (provisional: cámbialo por el logo real)
+index.html, manifest.json, img/   shell del CRM (PWA). img/ sale de 3D/Paraiso del Rio/logo.jpeg (logo.jpeg, logo-panel.jpg, icon-192/512.png)
 crm/app.jsx  ->  crm/app.js       CRM (React). app.js es el compilado; app.jsx es el código fuente
 crm/lots.js                       GENERADO: 30 lotes de la Mz M (LM1-V ... LM30-V), con área y precio del Excel
 crm/firebase-config.js            config web del proyecto Firebase
@@ -33,7 +33,7 @@ Si cambia el Excel: `python tools/sync_tour.py --skip-copy` y luego `node tools/
 
 ## Re-exportar desde 3DVista (cuando cambies el tour)
 1. Exporta **desde el 3DVista con licencia** (un export sin licencia trae marca de agua y `sync_tour.py` / `build_zip.py` lo detectan).
-2. Deja el resultado en `3D/Paraiso del Rio/paraiso` (o pasa `--src`). `project.vtp` y `hotspots/` se ignoran.
+2. Deja el resultado en `3D/Paraiso del Rio/paraiso` (o en su subcarpeta `web/`, se detecta sola; o pasa `--src`). `project.vtp` y `hotspots/` se ignoran.
 3. `python tools/sync_tour.py` (necesita Python con `pillow` y `openpyxl`). Es seguro repetirlo.
 4. Si cambió la lista de lotes, `node tools/seed_lots.mjs --account <correo>` (crea los nuevos sin tocar los existentes).
 
