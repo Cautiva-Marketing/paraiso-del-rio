@@ -31,6 +31,11 @@ Cada lote del tour es un polígono con etiqueta `LM<n>-V` (→ id `mzm-<nn>`). E
 (M-1, 3, 20, 21, 26 al 30) se crean **disponibles, sin área ni precio**: complétalos desde el CRM (Lista de lotes → editar).
 Si cambia el Excel: `python tools/sync_tour.py --skip-copy` y luego `node tools/seed_lots.mjs --account <correo> --force` (el `--force` sobrescribe precio y área).
 
+## Capas del plano (botón del ojo)
+Los overlays con tag son capas (Educación, Comunal, Recreación, Mz-A…Mz-L, LetrerosM). `crm-bridge.js` además agrupa cada letrero de manzana
+(`MZA`, `MZB`… y `MZM`) con la capa de su manzana, y crea la capa **Mz-M** (polígono `MZ M`, números `MZ M - Numeros` y letrero `MZM`), así que al apagar una
+manzana se ocultan su polígono y su letrero. No hace falta tocar los tags en 3DVista.
+
 ## Re-exportar desde 3DVista (cuando cambies el tour)
 1. Exporta **desde el 3DVista con licencia** (un export sin licencia trae marca de agua y `sync_tour.py` / `build_zip.py` lo detectan).
 2. Deja el resultado en `3D/Paraiso del Rio/paraiso` (o en su subcarpeta `web/`, se detecta sola; o pasa `--src`). `project.vtp` y `hotspots/` se ignoran.

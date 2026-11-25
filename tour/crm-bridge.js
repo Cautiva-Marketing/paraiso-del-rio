@@ -27,6 +27,10 @@
 
     var STATUS_SUFFIXES = ['_disponible', '_reservado', '_vendido', '_adjudicado'];
     var IGNORED_TAGS = ['begin', 'tourLoaded'];
+    // Cada letrero de manzana ("MZA", "MZM") se oculta junto con la capa de su manzana (mz-a, mz-m).
+    // La Mz M ademas agrupa su poligono ("MZ M") y los numeros de lote ("MZ M - Numeros") en la capa mz-m.
+    var SIGN_LABEL_RE = /^MZ([A-Z])$/i;
+    var MZ_M_LABELS = { 'MZ M': 1, 'MZ M - Numeros': 1 };
     var HOVER_OPACITY = 0.5;
     var TAG_MODE_OPACITY = 0.75;
     var TAG_MODE_HOVER_OPACITY = 0.25;
@@ -164,6 +168,11 @@
             var data = safeGet(overlay, 'data') || {};
             var label = data.label;
             var tags = (data.tags || []).filter(function (t) { return IGNORED_TAGS.indexOf(t) === -1; });
+            if (typeof label === 'string' && !isLotLabel(label)) {
+                var signMatch = SIGN_LABEL_RE.exec(label);
+                var blockTag = signMatch ? 'mz-' + signMatch[1].toLowerCase() : (MZ_M_LABELS[label] ? 'mz-m' : '');
+                if (blockTag && tags.indexOf(blockTag) === -1) tags = tags.concat([blockTag]);
+            }
 
             // Plan A: overlay de lote por etiqueta
             if (typeof label === 'string' && isLotLabel(label)) {
@@ -213,7 +222,11 @@
                 tagEntries.push(tEntry);
                 if (tLotId && foundLotIds.indexOf(tLotId) === -1) foundLotIds.push(tLotId);
             } else {
-                layerEntries.push({ overlay: overlay, layerTags: layerTags, hidden: false });
+                layerEntries.push({
+                    overlay: overlay, layerTags: layerTags, hidden: false,
+                    // se recuerda como venia del export para devolverlo igual al volver a mostrar la capa
+                    origEnabled: safeGet(overlay, 'enabled') !== false
+                });
             }
         });
 
@@ -270,7 +283,7 @@
             entry.hidden = hidden;
             try {
                 entry.overlay.set('visible', !hidden);
-                entry.overlay.set('enabled', !hidden);
+                entry.overlay.set('enabled', hidden ? false : entry.origEnabled);
             } catch (e) {}
         });
     }
